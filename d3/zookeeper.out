@@ -1,0 +1,37 @@
+2020-11-20 09:30:01,516 - INFO  [main:QuorumPeerConfig@90] - Reading configuration from: /Users/srihariravi/Desktop/Part-Time/zookeeper-3.3.6/bin/../conf/zoo.cfg
+2020-11-20 09:30:01,521 - WARN  [main:QuorumPeerMain@105] - Either no config or no quorum defined in config, running  in standalone mode
+2020-11-20 09:30:01,534 - INFO  [main:QuorumPeerConfig@90] - Reading configuration from: /Users/srihariravi/Desktop/Part-Time/zookeeper-3.3.6/bin/../conf/zoo.cfg
+2020-11-20 09:30:01,534 - INFO  [main:ZooKeeperServerMain@94] - Starting server
+2020-11-20 09:30:06,559 - INFO  [main:Environment@97] - Server environment:zookeeper.version=3.3.6-1366786, built on 07/29/2012 06:22 GMT
+2020-11-20 09:30:06,559 - INFO  [main:Environment@97] - Server environment:host.name=192.168.0.115
+2020-11-20 09:30:06,559 - INFO  [main:Environment@97] - Server environment:java.version=1.8.0_231
+2020-11-20 09:30:06,559 - INFO  [main:Environment@97] - Server environment:java.vendor=Oracle Corporation
+2020-11-20 09:30:06,560 - INFO  [main:Environment@97] - Server environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/jre
+2020-11-20 09:30:06,560 - INFO  [main:Environment@97] - Server environment:java.class.path=/Users/srihariravi/Desktop/Part-Time/zookeeper-3.3.6/bin/../build/classes:/Users/srihariravi/Desktop/Part-Time/zookeeper-3.3.6/bin/../build/lib/*.jar:/Users/srihariravi/Desktop/Part-Time/zookeeper-3.3.6/bin/../zookeeper-3.3.6.jar:/Users/srihariravi/Desktop/Part-Time/zookeeper-3.3.6/bin/../lib/log4j-1.2.15.jar:/Users/srihariravi/Desktop/Part-Time/zookeeper-3.3.6/bin/../lib/jline-0.9.94.jar:/Users/srihariravi/Desktop/Part-Time/zookeeper-3.3.6/bin/../src/java/lib/*.jar:/Users/srihariravi/Desktop/Part-Time/zookeeper-3.3.6/bin/../conf:
+2020-11-20 09:30:06,560 - INFO  [main:Environment@97] - Server environment:java.library.path=/Users/srihariravi/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+2020-11-20 09:30:06,560 - INFO  [main:Environment@97] - Server environment:java.io.tmpdir=/var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/T/
+2020-11-20 09:30:06,560 - INFO  [main:Environment@97] - Server environment:java.compiler=<NA>
+2020-11-20 09:30:06,560 - INFO  [main:Environment@97] - Server environment:os.name=Mac OS X
+2020-11-20 09:30:06,561 - INFO  [main:Environment@97] - Server environment:os.arch=x86_64
+2020-11-20 09:30:06,561 - INFO  [main:Environment@97] - Server environment:os.version=10.13
+2020-11-20 09:30:06,561 - INFO  [main:Environment@97] - Server environment:user.name=root
+2020-11-20 09:30:06,561 - INFO  [main:Environment@97] - Server environment:user.home=/var/root
+2020-11-20 09:30:06,561 - INFO  [main:Environment@97] - Server environment:user.dir=/Users/srihariravi/Desktop/CSE578/dv-bom-visual-analytics-1/d3
+2020-11-20 09:30:06,569 - INFO  [main:ZooKeeperServer@673] - tickTime set to 2000
+2020-11-20 09:30:06,569 - INFO  [main:ZooKeeperServer@682] - minSessionTimeout set to -1
+2020-11-20 09:30:06,569 - INFO  [main:ZooKeeperServer@691] - maxSessionTimeout set to -1
+2020-11-20 09:30:06,601 - INFO  [main:NIOServerCnxn$Factory@143] - binding to port 0.0.0.0/0.0.0.0:2181
+2020-11-20 09:30:06,602 - FATAL [main:ZooKeeperServerMain@62] - Unexpected exception, exiting abnormally
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:67)
+	at org.apache.zookeeper.server.NIOServerCnxn$Factory.<init>(NIOServerCnxn.java:144)
+	at org.apache.zookeeper.server.ZooKeeperServerMain.runFromConfig(ZooKeeperServerMain.java:108)
+	at org.apache.zookeeper.server.ZooKeeperServerMain.initializeAndRun(ZooKeeperServerMain.java:85)
+	at org.apache.zookeeper.server.ZooKeeperServerMain.main(ZooKeeperServerMain.java:51)
+	at org.apache.zookeeper.server.quorum.QuorumPeerMain.initializeAndRun(QuorumPeerMain.java:108)
+	at org.apache.zookeeper.server.quorum.QuorumPeerMain.main(QuorumPeerMain.java:76)
